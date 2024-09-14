@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Enrique Casteblanco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Video de fondo */
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Contenido principal */
+        .content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+            z-index: 1;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        /* Logo */
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            animation-delay: 0.3s; /* Aparece antes que el nombre */
+        }
+
+        .name, .producer, .btn-custom {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        /* Retrasos de animación para cada elemento */
+        .name {
+            animation-delay: 0.5s;
+        }
+
+        .producer {
+            animation-delay: 1.5s;
+        }
+
+        .btn-custom {
+            animation-delay: 2.5s;
+        }
+
+        /* Animación de Fade In */
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .name {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .producer {
+            font-size: 2rem;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Botón personalizado con color rojo y transparencia */
+        .btn-custom {
+            font-size: 1.5rem;
+            padding: 10px 30px;
+            border-radius: 50px;
+            background-color: rgba(255, 0, 0, 0.8); /* Rojo con transparencia */
+            border: none;
+            color: white;
+            transition: background-color 0.3s ease, opacity 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: rgba(255, 0, 0, 0.6); /* Más transparencia al hacer hover */
+        }
+
+        svg{
+            
+  width:8%;
+  height:8%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video de fondo -->
+    <video autoplay muted loop class="video-bg">
+        <source src="https://cdn.pixabay.com/video/2015/08/11/306-135919105_large.mp4" type="video/mp4">
+        Tu navegador no soporta el video en HTML5.
+    </video>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <!-- Logo SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.5 82.6"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#e62c2a;}</style></defs><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M69.1,82.6q-8.59,0-13.35-3.6a18.51,18.51,0,0,1-6.6-9.7A46.89,46.89,0,0,1,47.3,55.7V27.1a49.58,49.58,0,0,1,1.85-14.3,17.24,17.24,0,0,1,6.6-9.45Q60.51,0,69.1,0q7.61,0,12.05,2.8a15.62,15.62,0,0,1,6.4,8,35.67,35.67,0,0,1,2,12.5v6.4H78.8V24a62.14,62.14,0,0,0-.45-7.95A8.68,8.68,0,0,0,75.9,10.7c-1.33-1.27-3.57-1.9-6.7-1.9s-5.53.68-7,2a10.07,10.07,0,0,0-2.85,5.8,52.19,52.19,0,0,0-.65,8.75V57.5a37.29,37.29,0,0,0,1,9.65,8.48,8.48,0,0,0,3.3,5,11.24,11.24,0,0,0,6.2,1.5q4.6,0,6.6-2A9.77,9.77,0,0,0,78.3,66a62.39,62.39,0,0,0,.5-8.4v-6H89.5v6a43.06,43.06,0,0,1-1.8,13.05,16.69,16.69,0,0,1-6.2,8.8Q77.1,82.6,69.1,82.6Z"/><path class="cls-2" d="M40.35,13.3a18.51,18.51,0,0,0-6.6-9.7Q29,0,20.4,0,12.41,0,8,3.15A16.69,16.69,0,0,0,1.8,12,43.06,43.06,0,0,0,0,25v6H10.7V25a62.39,62.39,0,0,1,.5-8.4A9.77,9.77,0,0,1,13.7,11q2-2.05,6.6-2a11.22,11.22,0,0,1,6.2,1.5,8.48,8.48,0,0,1,3.3,5,36.85,36.85,0,0,1,1,9.65V38.7H13.1v8H30.8V57.2A52.19,52.19,0,0,1,30.15,66a10,10,0,0,1-2.85,5.8q-2.21,2.06-7,2c-3.13,0-5.37-.63-6.7-1.9a8.68,8.68,0,0,1-2.45-5.35,62.14,62.14,0,0,1-.45-7.95V52.9H0v6.4A35.67,35.67,0,0,0,2,71.8a15.62,15.62,0,0,0,6.4,8q4.46,2.81,12,2.8,8.59,0,13.35-3.35a17.24,17.24,0,0,0,6.6-9.45A49.58,49.58,0,0,0,42.2,55.5V26.9A46.89,46.89,0,0,0,40.35,13.3Z"/></g></g></svg>
+
+        <!-- Nombre y título -->
+        <div class="name">Enrique Casteblanco</div>
+        <div class="producer">Audiovisual Producer</div>
+        <a href="principal.html" class="btn btn-custom">Enter</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  --primary-color: #3498db;
+}
+
+body {
+  color: #555; /* Steel Gray */
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+svg {
+ width: 2%;
+ height: 2%;
+}
+
+.nav-link {
+  font-size: 18px !important;
+  font-weight: 500;
+}
+
+.head-section {
+  background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
+}
+
+.navbar-brand,
+.text-primary {
+  color: #0a58ca !important;
+}
+
+.btn-primary {
+  background-color: #0a58ca !important;
+  border: none;
+}
+
+.nav-link:hover {
+  color: #0a58ca;
+}
+
+p {
+  font-size: 18px;
+}
+.btn-primary:hover {
+  background-color: #257dfd !important;
+}
+
+.blue-bg {
+  background-color: #0a58ca;
+  color: #fff;
+}
+
+.ionicons {
+  color: #0a58ca;
+  background-color: #f2f2f2;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 12px;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .active {
+  background-color: #0a58ca !important;
+  border: none;
+  color: #fff !important;
+}
+
+.footer-section {
+  background-color: #0a58ca !important;
+  border: none;
+  color: #fff !important;
+}
+
+/* Estilos pagina principal */
+/* Estilo del menú fijo */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Fondo blanco con transparencia */
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Espaciado superior para las secciones (para no quedar debajo del menú) */
+section {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* Altura mínima de cada sección */
+.section-content {
+  min-height: 100vh;
+  /* Cada sección ocupa al menos la altura completa de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Colores diferenciados para cada sección */
+#section1 {
+  background-color: #f8f9fa;
+}
+
+/* Gris claro */
+#section2 {
+  background-color: #e9ecef;
+}
+
+/* Gris más oscuro */
+#section3 {
+  background-color: #dee2e6;
+}
+
+/* Otro tono de gris */
+#section4 {
+  background-color: #ced4da;
+}
+
+/* Gris oscuro */
+
+/* Estilo del contenido dentro de cada sección */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Botón traslúcido para volver arriba */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Botón traslúcido */
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  z-index: 20;
+}
+
+.back-to-top:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Aumenta la opacidad al hacer hover */
+}
+
+.back-to-top:focus {
+  outline: none;
+}
